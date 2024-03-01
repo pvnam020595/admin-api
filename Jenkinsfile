@@ -1,10 +1,5 @@
-/* Requires the Docker Pipeline plugin */
-pipeline {
-    stages {
-        stage('build') {
-            steps {
-                sh 'php --version'
-            }
-        }
+node {
+    stage('hello') {
+        echo "hello World"
     }
 }
